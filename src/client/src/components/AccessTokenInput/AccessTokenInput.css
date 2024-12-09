@@ -1,0 +1,42 @@
+.access-token-form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.access-token-input {
+    width: 35rem;
+    padding: 10px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 4px 0px 0px 4px;
+    outline: none;
+}
+
+.access-token-input:focus {
+    border-color: #4A90E2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:focus {
+    background-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+.submit-button:hover {
+    background-color: #4A90E2;
+}

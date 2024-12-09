@@ -1,7 +1,13 @@
+import AcessTokenInput from "./components/AccessTokenInput/AccessTokenInput";
+import "./App.css";
+
 const App = () => {
   return (
-    <div>
-      <div>AI ASSISTED JIRA CREATOR</div>
+    <div className="app-container">
+      <h1 className="app-title">AI ASSISTED JIRA CREATOR</h1>
+      <div>
+        <AcessTokenInput />
+      </div>
     </div>
   );
 };

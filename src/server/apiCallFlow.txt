@@ -1,0 +1,32 @@
+Backend API flow:-
+
+a. Webex Meetings APIs
+
+1. Meetings API to list of meeting:- https://webexapis.com/v1/meetings GET, this will give you meetingId
+
+2. Get a Single Meeting:- https://webexapis.com/v1/meetings/cb9e1babb4fb4e26a470baf7f0206ea6, GET request to get single meeting details
+
+b. Webex Transcript APIs
+
+1. List meeting transcript https://webexapis.com/v1/meetingTranscripts, GET, this will give list of meeting transcripts which will have transcript Id
+
+2. Download the transcript using the API:- https://webexapis.com/v1/meetingTranscripts/{transcriptId}/download, GET, it will download the transcript for you.
+
+3.
+
+c. Webex Summary APIs
+
+
+
+Pass it to Bridge IT or LLM or Open AI APIs to generate a good and meaningful docs so that we can document it or create a JIRA
+
+1. 
+
+2.
+
+
+Atlassian Confluence, JIRA public API call to create docs and jira
+
+1. 
+
+2. 

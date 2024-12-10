@@ -1,35 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import AcessTokenInput from "./components/AccessTokenInput/AccessTokenInput";
+import MeetingForm from "./components/MeetingForm/MeetingForm";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="aijc-container">
+      <h1 className="aijc-title">AI POWERED CONFLUENCE PAGE CREATOR</h1>
+      <div className="aijc-content">
+        <AcessTokenInput
+          placeholder="Enter your Webex access token"
+          tokenKey="webex-access-token"
+        />
+        <AcessTokenInput
+          placeholder="Enter your Confluence access token"
+          tokenKey="confluence-access-token"
+        />
+        <MeetingForm />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default App
+export default App;

@@ -2,14 +2,14 @@ import { useState } from "react";
 import "./AccessTokenInput.css";
 import PropTypes from "prop-types";
 
-const AcessTokenInput = ({ placeholder }) => {
+const AcessTokenInput = ({ placeholder, tokenKey }) => {
   const [accessToken, setAccessToken] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(accessToken);
 
-    localStorage.setItem("access-token", accessToken);
+    localStorage.setItem(tokenKey, accessToken);
     setAccessToken("");
   };
 
@@ -33,6 +33,7 @@ const AcessTokenInput = ({ placeholder }) => {
 
 AcessTokenInput.propTypes = {
   placeholder: PropTypes.string.isRequired,
+  tokenKey: PropTypes.string.isRequired,
 };
 
 export default AcessTokenInput;

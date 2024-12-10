@@ -9,7 +9,7 @@ const MeetingForm = () => {
   };
   return (
     <form className="gcw-form" onSubmit={handleSubmit}>
-      <h2 className="gcw-title">Generate Wiki</h2>
+      <h2 className="gcw-title">Choose the meeting from below</h2>
       <CustomDropdown />
       <button className="gcw-submit-button" type="submit">
         Generate Confluence Wiki
